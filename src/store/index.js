@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
-import user from './user'
-import quiz from './quiz'
+import user from '@/store/user'
+import quiz from '@/store/quiz'
 
 Vue.use(Vuex);
 

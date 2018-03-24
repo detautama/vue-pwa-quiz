@@ -6,6 +6,7 @@ import Vuetify from 'vuetify'
 import App from './App'
 import router from './router'
 import store from './store'
+import './auth'
 
 import('vuetify/dist/vuetify.min.css');
 
