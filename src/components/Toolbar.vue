@@ -1,6 +1,8 @@
 <template functional>
   <v-toolbar app dark color="primary">
-    <v-toolbar-title class="white--text ml-5">Vue PWA</v-toolbar-title>
+    <v-toolbar-title>
+      <router-link tag="span" to="/" class="white--text ml-5" style="cursor:pointer">Vue PWA</router-link>
+    </v-toolbar-title>
     <v-spacer />
 
     <v-menu
