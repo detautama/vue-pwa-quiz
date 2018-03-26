@@ -1,12 +1,13 @@
 <template>
   <v-app>
     <toolbar
-    :test="test"
-    :login="login"
-    :profile="profile"
-    :loggedIn="loggedIn" />
+      :login="login"
+      :logout="logout"
+      :profile="profile"
+      :loggedIn="loggedIn"
+    />
     <v-content>
-      <v-container fluid>
+      <v-container>
         <router-view></router-view>
       </v-container>
     </v-content>
@@ -27,10 +28,9 @@
       })
     },
     methods: {
-      ...mapActions('user', 
-      {
-        test: 'test',
-        login: 'login'
+      ...mapActions('user', {
+        login: 'login',
+        logout: 'logout'
       })
     }
   };

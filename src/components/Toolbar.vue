@@ -2,8 +2,14 @@
   <v-toolbar app dark color="primary">
     <v-toolbar-title class="white--text ml-5">Vue PWA</v-toolbar-title>
     <v-spacer />
-    <v-menu v-if="props.loggedIn" auto offset-y bottom>
-      <v-avatar slot="activator">
+
+    <v-menu
+      v-if="props.loggedIn"
+      auto
+      offset-y
+      bottom
+    >
+      <v-avatar slot="activator" class="mr-5">
         <img :src="props.profile.picture" />
       </v-avatar>
       <v-list>
@@ -12,7 +18,11 @@
         </v-list-tile>
       </v-list>
     </v-menu>
-    <v-btn v-else @click="props.login" class="mr-5" flat>Login</v-btn>
-    <v-btn @click="props.test">test</v-btn>
+    <v-btn
+      class="mr-5"
+      v-else
+      flat
+      @click="props.login"
+    >Login</v-btn>
   </v-toolbar>
 </template>
